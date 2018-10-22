@@ -2,7 +2,11 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div className="secB">TEAM pending implementation</div>
+    <div className="secB">
+      <div className="container">
+        <h2>Team</h2>
+      </div>
+    </div>
   )
 }
 

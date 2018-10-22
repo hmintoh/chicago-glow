@@ -11,7 +11,7 @@ import Disclaimer from "./disclaimer/disclaimer.jsx";
 class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre" />
         <Routes />
         <Jumbotron />

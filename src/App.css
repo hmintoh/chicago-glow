@@ -1,5 +1,5 @@
 .secA {
-  background-image: linear-gradient(to bottom right, #3728ad, #282c34); 
+  background-image: linear-gradient(to bottom right, #0c2d4e, #282c34); 
   color: white;
   padding: 10% 0%;
 }
@@ -8,6 +8,10 @@
   background-image: white;
   color: black;
   padding: 10% 0%;
+}
+
+.container {
+  padding: 0% 3%;
 }
 
 .App-header {

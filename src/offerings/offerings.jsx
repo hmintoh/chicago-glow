@@ -1,8 +1,13 @@
 import React from "react";
+import "./offerings.css"
 
 const Offerings = () => {
   return (
-    <div className="secA">OFFERINGS pending implementation</div>
+    <div className="secA">
+      <div className="container">
+        <h2>Services</h2>
+      </div>
+    </div >
   )
 }
 

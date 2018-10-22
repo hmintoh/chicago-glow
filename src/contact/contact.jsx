@@ -2,7 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="secA">CONTACT pending implementation</div>
+    <div className="secA">
+      <div className="container">
+        CONTACT pending implementation
+        </div>
+    </div>
   )
 }
 

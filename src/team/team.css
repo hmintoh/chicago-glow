@@ -1,0 +1,14 @@
+.card_image {
+  width: 150px;
+  height: 150px;
+  display: inline;
+}
+
+.card_content {
+  font-size: 0.8em;
+  display: inline;
+}
+
+.secBA {
+  background-color: red;
+}

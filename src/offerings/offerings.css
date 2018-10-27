@@ -1,0 +1,31 @@
+.services_grid {
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2%;
+}
+
+.services_item {
+  border: 2px solid white;
+  text-align: center;
+}
+
+.btn_readMore {
+  border: 2px solid white;
+  background-color: #25ad8900;
+  color: white;
+}
+
+.btn_readMore:hover {
+  background-color: #243b67a4;
+}
+
+.btn_readMore1 {
+  border: 2px solid white;
+  background-color: #25ad8969;
+  color: white;
+}
+
+.btn_readMore1:hover {
+  background-color: #243b67a4;
+}

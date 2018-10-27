@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+.grid-item {
+  border: 1px solid white;
+  text-align: center;
+}
+
+/* responsive */

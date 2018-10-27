@@ -1,0 +1,9 @@
+.btn_investNow {
+  border: 2px solid #243c67;
+  color: #243c67;
+}
+
+.btn_investNow:hover {
+  background-color: #243c67;
+  color: white;
+}

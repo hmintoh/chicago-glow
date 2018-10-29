@@ -14,7 +14,7 @@ const Routes = () => {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/offerings">Offerings</NavLink>
+              <NavLink to="/research">Research</NavLink>
             </li>
             <li>
               <NavLink to="/team">Team</NavLink>

@@ -1,11 +1,11 @@
 import React from "react";
-import "./offerings.css";
+import "./research.css";
 
-const Offerings = () => {
+const Research = () => {
   return (
     <div className="secA">
       <div className="container">
-        <h2>Services</h2>
+        <h2>Research</h2>
         <div className="services_grid">
           <div className="services_item">
             <h3>Index Investing</h3>
@@ -30,4 +30,4 @@ const Offerings = () => {
   );
 };
 
-export default Offerings;
+export default Research;

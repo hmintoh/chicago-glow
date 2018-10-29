@@ -3,7 +3,7 @@ import "./App.css";
 import Routes from "./routes/routes.jsx";
 import Jumbotron from "./jumbotron/jumbotron.jsx";
 import About from "./about/about.jsx";
-import Offerings from "./offerings/offerings.jsx";
+import Research from "./research/research.jsx";
 import Team from "./team/team.jsx";
 import AdvisoryBoard from "./advisory/advisory";
 import Contact from "./contact/contact.jsx";
@@ -20,7 +20,7 @@ class App extends Component {
         <Routes />
         <Jumbotron />
         <About />
-        <Offerings />
+        <Research />
         <Team />
         <AdvisoryBoard />
         <Contact />

@@ -1,4 +1,5 @@
-.disclaimer p {
+.disclaimer {
   font-family: "Proza Libre", sans-serif;
-  font-size: 0.7em;
+  font-size: 0.6em;
+  padding: 10px 0px;
 }

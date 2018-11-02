@@ -20,13 +20,16 @@ const Routes = () => {
               <NavLink to="/team">Team</NavLink>
             </li>
             <li>
-              <NavLink to="/advisory">Advisory</NavLink>
-            </li>
-            <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
             <li>
-              <a href="https://www.chicagoglobalwealth.com/">BLOG</a>
+              <a
+                href="https://www.chicagoglobalwealth.com/"
+                rel="noopener"
+                target="_blank"
+              >
+                BLOG
+              </a>
             </li>
           </ul>
         </div>

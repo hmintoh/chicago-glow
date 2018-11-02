@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-slick";
 import Ivan from "../assets/Ivan_Chelebiev.png";
 import Ben from "../assets/Ben_Charoenwong.png";
+import AdvisoryBoard from "../advisory/advisory.jsx";
 import "./team.css";
 
 const Team = () => {
@@ -79,6 +80,7 @@ const Team = () => {
             </p>
           </div>
         </Carousel>
+        <AdvisoryBoard />
       </div>
     </div>
   );

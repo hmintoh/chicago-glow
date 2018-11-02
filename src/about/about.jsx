@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="secB" onMouseOver={this.handleMouseOver}>
+    <div className="secB">
       <div className="container">
         <h4>
           We are a client-focused wealth manager that will allow investors to

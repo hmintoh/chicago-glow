@@ -2,37 +2,28 @@ import React from "react";
 import "./advisory.css";
 
 const AdvisoryBoard = () => {
+  const advisoryList = [
+    {name: "Michael Gibbs", role: "Governance"},
+    {name: "Sam Hartzmark", role: "Behavioral Finance"},
+    {name: "Kenneth Ho", role: "Business Strategy"},
+    {name: "Alan Kwan", role: "Quantitative Strategies"},
+    {name: "Gaurav Rastogi", role: "Quantitative Strategies"},
+    {name: "Laurence Siegel", role: "Asset Allocation"}
+  ];
+
   return (
-    <div className="secB">
-      {/* <div className="container"> */}
-      <h2>Advisory Board</h2>
-      <div className="grid">
-        <div className="grid-item">
-          <h3>Michael Gibbs</h3>
-          <p>Governance</p>
-        </div>
-        <div className="grid-item">
-          <h3>Samuel Hartzmark</h3>
-          <p>Behavioral Finance</p>
-        </div>
-        <div className="grid-item">
-          <h3>Kenneth Ho</h3>
-          <p>Business Strategy</p>
-        </div>
-        <div className="grid-item">
-          <h3>Alan Kwan</h3>
-          <p>Quantitative Strategies</p>
-        </div>
-        <div className="grid-item">
-          <h3>Gaurav Rastogi</h3>
-          <p>Quantitative Strategies</p>
-        </div>
-        <div className="grid-item">
-          <h3>Laurence Siegel</h3>
-          <p>Asset Allocation</p>
+    <div className="">
+      <div className="">
+        <h2>Advisory Board</h2>
+        <div className="grid">
+          {advisoryList.map(person => (
+            <div className="grid-item">
+              <h3>{person.name}</h3>
+              <p>{person.role}</p>
+            </div>
+          ))}
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };

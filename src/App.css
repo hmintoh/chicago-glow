@@ -29,4 +29,5 @@ button {
   font-weight: bold;
   font-size: 0.9em;
   padding: 15px 30px;
+  bottom: 0;
 }

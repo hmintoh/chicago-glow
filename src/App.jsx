@@ -7,6 +7,7 @@ import Research from "./research/research.jsx";
 import Team from "./team/team.jsx";
 import Contact from "./contact/contact.jsx";
 import Disclaimer from "./disclaimer/disclaimer.jsx";
+import "animate.css";
 
 class App extends Component {
   render() {

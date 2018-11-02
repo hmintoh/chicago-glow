@@ -7,25 +7,17 @@
 
 .services_item {
   border: 2px solid white;
+  box-shadow: 5px 10px #cfd0d462;
   text-align: center;
+  padding: 30px;
 }
 
-.btn_readMore {
+.btn_more {
   border: 2px solid white;
-  background-color: #25ad8900;
+  background-color: #25ad894d;
   color: white;
 }
 
-.btn_readMore:hover {
-  background-color: #243b67a4;
-}
-
-.btn_readMore1 {
-  border: 2px solid white;
-  background-color: #25ad8969;
-  color: white;
-}
-
-.btn_readMore1:hover {
+.btn_more:hover {
   background-color: #243b67a4;
 }

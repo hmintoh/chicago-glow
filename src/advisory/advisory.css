@@ -9,4 +9,8 @@
   text-align: center;
 }
 
+.grid-item:hover {
+  background-color: #243b67a4;
+}
+
 /* responsive */

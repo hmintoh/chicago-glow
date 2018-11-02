@@ -1,13 +1,19 @@
+/*
+grey #cfd0d
+blue #1a3c67
+green #25ad88
+*/
+
 .secA {
-  background-image: linear-gradient(to top right, #25ad88, #1a3c67);
+  background-image: linear-gradient(to top right, #1a3c67, #1a3b679f);
   color: white;
-  padding: 8% 0%;
+  padding: 5% 0%;
 }
 
 .secB {
-  background-image: white;
+  background-color: #cfd0d462;
   color: black;
-  padding: 8% 0%;
+  padding: 5% 0%;
 }
 
 .container {
@@ -19,7 +25,8 @@
 }
 
 button {
-  font-family: "Proza Libre", "Cormorant Garamond", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: bold;
   font-size: 0.9em;
   padding: 15px 30px;
 }

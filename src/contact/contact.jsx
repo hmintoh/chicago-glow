@@ -3,7 +3,7 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <div className="secB">
+    <div className="secA">
       <div className="container">
         <h2>Get in Touch</h2>
         <p>info@chicagoglobalwealth.com</p>

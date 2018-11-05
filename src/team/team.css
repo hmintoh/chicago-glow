@@ -1,3 +1,11 @@
+.team-grid-item-a {
+  width: 70%;
+}
+
+/* .team-grid-item-b {
+  background-image: url(../jumbotron/jumbotron.jpg);
+} */
+
 .card_content {
   font-size: 0.8em;
 }
@@ -5,4 +13,10 @@
 .card_image {
   width: 150px;
   height: 150px;
+}
+
+@media screen and (max-width: 990px) {
+  .team-grid-item-a {
+    width: auto;
+  }
 }

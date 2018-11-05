@@ -12,10 +12,10 @@ const AdvisoryBoard = () => {
   ];
 
   return (
-    <div className="">
-      <div className="">
+    <div className="secB">
+      <div className="container">
         <h2>Advisory Board</h2>
-        <div className="grid">
+        <div className="advisory-grid">
           {advisoryList.map(person => (
             <div className="grid-item">
               <h3>{person.name}</h3>

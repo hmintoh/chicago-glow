@@ -7,13 +7,13 @@ green #25ad88
 .secA {
   background-image: linear-gradient(to top right, #1a3c67, #1a3b679f);
   color: white;
-  padding: 5% 0%;
+  padding: 3% 0%;
 }
 
 .secB {
   background-color: #cfd0d462;
   color: black;
-  padding: 5% 0%;
+  padding: 3% 0%;
 }
 
 .container {

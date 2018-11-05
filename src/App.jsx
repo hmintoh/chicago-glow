@@ -5,6 +5,7 @@ import Jumbotron from "./jumbotron/jumbotron.jsx";
 import About from "./about/about.jsx";
 import Research from "./research/research.jsx";
 import Team from "./team/team.jsx";
+import AdvisoryBoard from "./advisory/advisory.jsx";
 import Contact from "./contact/contact.jsx";
 import Disclaimer from "./disclaimer/disclaimer.jsx";
 import "animate.css";
@@ -22,6 +23,7 @@ class App extends Component {
         <About />
         <Research />
         <Team />
+        <AdvisoryBoard />
         <Contact />
         <Disclaimer />
       </div>

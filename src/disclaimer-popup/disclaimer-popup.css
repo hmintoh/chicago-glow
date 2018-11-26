@@ -1,0 +1,26 @@
+.popup-container {
+  background-color: #cfd0d462;
+  text-align: center;
+  padding: 2% 20%;
+}
+
+.popup-container p {
+  font-size: 0.9em;
+}
+
+.disclaimer-btn {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 15px 30px;
+  margin: 2%;
+  bottom: 0;
+  border: 2px solid white;
+  background-color: #243b67a4;
+  color: white;
+}
+
+.disclaimer-btn:hover {
+  background-color: #25ad894d;
+  color: black;
+}

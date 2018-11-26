@@ -9,11 +9,26 @@ import AdvisoryBoard from "./advisory/advisory.jsx";
 import Research from "./research/research.jsx";
 import Contact from "./contact/contact.jsx";
 import Disclaimer from "./disclaimer/disclaimer.jsx";
+import DisclaimerPopUp from "./disclaimer-popup/disclaimer-popup.jsx";
 import "animate.css";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {acceptedDisclaimer: false};
+  }
+
+  toggleDisclaimerPage = () => {
+    this.setState({acceptedDisclaimer: true});
+  };
+
+  toggelRedirect = () => {
+    return <a href="https://www.google.com/" />;
+  };
+
   render() {
-    return (
+    const {acceptedDisclaimer} = this.state;
+    return acceptedDisclaimer ? (
       <div>
         <link
           rel="stylesheet"
@@ -29,6 +44,11 @@ class App extends Component {
         <Contact />
         <Disclaimer />
       </div>
+    ) : (
+      <DisclaimerPopUp
+        accepted={this.toggleDisclaimerPage}
+        redirected={this.toggelRedirect}
+      />
     );
   }
 }

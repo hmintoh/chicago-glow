@@ -14,10 +14,10 @@ const Routes = () => {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <NavLink to="/research">Research</NavLink>
+              <NavLink to="/team">Team</NavLink>
             </li>
             <li>
-              <NavLink to="/team">Team</NavLink>
+              <NavLink to="/research">Research</NavLink>
             </li>
             <li>
               <NavLink to="/contact">Contact</NavLink>

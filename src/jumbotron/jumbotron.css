@@ -1,6 +1,7 @@
 .jumbotron {
   padding: 24% 0% 15% 0%;
   background-image: url(./jumbotron.jpg);
+  background-repeat: no-repeat;
 }
 
 .tagline {

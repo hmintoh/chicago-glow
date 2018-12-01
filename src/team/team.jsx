@@ -12,11 +12,12 @@ const Team = () => {
     autoplaySpeed: 2500,
     speed: 1000,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    arrows: false
   };
   return (
     <div>
-      <div className="secB">
+      <div id="team" className="secB">
         <div className="container team-grid-item-a">
           <h2>Team</h2>
           <Carousel {...settings}>

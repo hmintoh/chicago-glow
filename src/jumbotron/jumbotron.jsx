@@ -3,9 +3,10 @@ import "./jumbotron.css";
 
 const Jumbotron = () => {
   return (
-    <div className="secA jumbotron">
-      <h1 className="animated fadeIn slow delay-1s tagline">
-        Reshaping Wealth Management
+    <div id="jumbotron" className="jumbotron">
+      <h1 className=" animated fadeIn slow delay-1s tagline">
+        Reshaping <br />
+        Wealth Management
       </h1>
     </div>
   );

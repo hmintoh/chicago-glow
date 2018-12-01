@@ -1,18 +1,28 @@
 /*
-grey #cfd0d
-blue #1a3c67
-green #25ad88
+lightshade: #E6E6E7
+lightaccent: #65B9DA
+main: #1A3C67
+darkaccent: #25AD88
+darkshade: #24242E
+
+black: #24242e
+success: #3f8f57
+warning: #bd7f1f
+danger: #f44336
 */
 
 .secA {
-  background-image: linear-gradient(to top right, #1a3c67, #1a3b679f);
-  color: white;
+  /*dark*/
+  /* background-image: linear-gradient(to top right, #1a3c67, #1a3b679f); */
+  background-image: linear-gradient(to top right, #24242e, #1a3c67);
+  color: #e6e6e7;
   padding: 3% 0%;
 }
 
 .secB {
-  background-color: #cfd0d462;
-  color: black;
+  /*light*/
+  background-color: #e6e6e7;
+  color: #24242e;
   padding: 3% 0%;
 }
 
@@ -20,14 +30,9 @@ green #25ad88
   padding: 0% 3%;
 }
 
-.link {
-  color: #61dafb;
-}
-
 button {
   font-family: "Cormorant Garamond", sans-serif;
-  font-weight: bold;
-  font-size: 0.9em;
   padding: 15px 30px;
   bottom: 0;
+  font-size: 1em;
 }

@@ -2,10 +2,6 @@
   width: 94%;
 }
 
-/* .team-grid-item-b {
-  background-image: url(../jumbotron/jumbotron.jpg);
-} */
-
 .card_content {
   font-size: 0.8em;
 }
@@ -15,7 +11,7 @@
   height: 150px;
 }
 
-@media screen and (max-width: 990px) {
+@media (max-width: 500px) {
   .team-grid-item-a {
     width: auto;
   }

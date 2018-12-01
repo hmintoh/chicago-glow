@@ -2,6 +2,8 @@
   position: fixed;
   width: 100%;
   background-color: white;
+  z-index: 1;
+  top: 0;
 }
 
 .logo {
@@ -18,12 +20,9 @@ li {
   display: inline;
 }
 
-a {
-  font-family: "Cormorant Garamond", sans-serif;
+.navlinks {
   font-size: 1.2em;
-  text-decoration: none;
   padding: 0px 20px;
-  color: #1a3c67;
 }
 
 a:hover {

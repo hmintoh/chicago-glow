@@ -1,5 +1,5 @@
 import React from "react";
-import {HashRouter as Router, NavLink, Redirect} from "react-router-dom";
+import {HashRouter as Router} from "react-router-dom";
 import logo_horizontal from "../assets/cgw_logo+text+horizontal.png";
 import "./routes.css";
 
@@ -11,24 +11,23 @@ const Routes = () => {
           <img className="logo" src={logo_horizontal} alt="logo" />
           <ul className="navbar">
             <li>
-              <NavLink to="/about">About</NavLink>
+              <a className="navlinks" href="#about">
+                About
+              </a>
             </li>
             <li>
-              <NavLink to="/team">Team</NavLink>
+              <a className="navlinks" href="#team">
+                Team
+              </a>
             </li>
             <li>
-              <NavLink to="/research">Research</NavLink>
+              <a className="navlinks" href="#research">
+                Research
+              </a>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
-            </li>
-            <li>
-              <a
-                href="https://www.chicagoglobalwealth.com/"
-                rel="noopener"
-                target="_blank"
-              >
-                BLOG
+              <a className="navlinks" href="#contact">
+                Contact
               </a>
             </li>
           </ul>

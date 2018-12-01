@@ -22,18 +22,10 @@ class App extends Component {
     this.setState({acceptedDisclaimer: true});
   };
 
-  toggelRedirect = () => {
-    return <a href="https://www.google.com/" />;
-  };
-
   render() {
     const {acceptedDisclaimer} = this.state;
     return acceptedDisclaimer ? (
       <div>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre"
-        />
         <Routes />
         <Jumbotron />
         <About />
@@ -45,10 +37,7 @@ class App extends Component {
         <Disclaimer />
       </div>
     ) : (
-      <DisclaimerPopUp
-        accepted={this.toggleDisclaimerPage}
-        redirected={this.toggelRedirect}
-      />
+      <DisclaimerPopUp accepted={this.toggleDisclaimerPage} />
     );
   }
 }

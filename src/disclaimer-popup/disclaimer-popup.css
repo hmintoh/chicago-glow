@@ -17,6 +17,10 @@
   color: white;
 }
 
+button {
+  font-size: 1em;
+}
+
 .disclaimer-btn:hover {
   background-color: #25ad894d;
   color: black;

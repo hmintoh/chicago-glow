@@ -23,6 +23,7 @@
 @media (max-width: 500px) {
   .tagline {
     font-size: 3em;
+    line-height: 1.2;
   }
 
   .jumbotron {

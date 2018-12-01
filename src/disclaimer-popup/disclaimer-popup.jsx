@@ -96,9 +96,9 @@ class DisclaimerPopUp extends Component {
           the trustee of such trust as the Authority may prescribe, when acting
           in that capacity; or
         </p>
+        <p>such other person as the Authority may prescribe.</p>
+        <h6> Terms: </h6>
         <p>
-          such other person as the Authority may prescribe.
-          <h6> Terms: </h6>
           Please read the terms below before proceeding. The terms explain
           certain restrictions imposed by law on the distribution of this
           information. In using this website, you agree to the below terms. If
@@ -107,9 +107,9 @@ class DisclaimerPopUp extends Component {
         <button className="disclaimer-btn" onClick={this.props.accepted}>
           Accept
         </button>
-        <button className="disclaimer-btn" onClick={this.props.redirected}>
+        <a className="disclaimer-btn" href="https://www.google.com">
           Disagree
-        </button>
+        </a>
       </div>
     );
   }

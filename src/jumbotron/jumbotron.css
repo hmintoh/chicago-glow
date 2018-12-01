@@ -24,4 +24,8 @@
   .tagline {
     font-size: 3em;
   }
+
+  .jumbotron {
+    background-position: center;
+  }
 }

@@ -33,7 +33,7 @@ a:hover {
   .navbar {
     display: block;
     width: 100vw;
-    margin: auto;
+    margin: 2% 0% 0% 0%;
   }
 
   .logo {

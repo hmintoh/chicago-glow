@@ -28,3 +28,16 @@ li {
 a:hover {
   color: #25ad88;
 }
+
+@media (max-width: 500px) {
+  .navbar {
+    display: block;
+    width: 100vw;
+    margin: auto;
+  }
+
+  .logo {
+    display: block;
+    margin: auto;
+  }
+}

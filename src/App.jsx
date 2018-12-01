@@ -22,10 +22,14 @@ class App extends Component {
     this.setState({acceptedDisclaimer: true});
   };
 
+  componentDidUpdate = () => {
+    window.scrollTo(0, 0);
+  };
+
   render() {
     const {acceptedDisclaimer} = this.state;
     return acceptedDisclaimer ? (
-      <div>
+      <div ref={ref => (this._div = ref)}>
         <Routes />
         <Jumbotron />
         <About />

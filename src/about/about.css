@@ -1,11 +1,11 @@
-#about h3 {
-  text-align: center;
+#about h4 {
+  text-align: justify;
   line-height: 1.5;
 }
 
 @media (max-width: 500px) {
-  #about h3 {
-    text-align: center;
+  #about h5 {
+    text-align: justify;
     line-height: 1.3;
   }
 }

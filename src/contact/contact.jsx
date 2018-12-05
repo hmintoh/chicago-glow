@@ -8,7 +8,7 @@ const Contact = () => {
         <h2>Get in Touch</h2>
         <p>info@chicagoglobalwealth.com</p>
         <button className="btn_investNow">
-          See Performace and Fund FactSheet
+          See Performance and Fund Fact Sheet
         </button>
       </div>
     </div>

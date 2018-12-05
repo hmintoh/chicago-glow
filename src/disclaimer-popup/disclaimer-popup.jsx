@@ -108,7 +108,7 @@ class DisclaimerPopUp extends Component {
           Accept
         </button>
         <a className="disclaimer-btn" href="https://www.google.com">
-          Disagree
+          Decline
         </a>
       </div>
     );

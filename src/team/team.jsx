@@ -24,9 +24,7 @@ const Team = () => {
             <div className="card_content">
               <img className="card_image" src={Ivan} alt="Ivan" />
               <h2>Ivan Chelebiev</h2>
-              <h4>
-                <i>Portfolio Manager</i>
-              </h4>
+              <h4>Portfolio Manager</h4>
               <p>
                 Mr. Ivan Chelebiev has nearly 20 years' experience in asset
                 management. His career began on Wall Street in 1999 and took him
@@ -58,9 +56,7 @@ const Team = () => {
             <div className="card_content">
               <img className="card_image" src={Ben} alt="Ben" />
               <h2>Ben Charoenwong</h2>
-              <h4>
-                <i>Head of Research</i>
-              </h4>
+              <h4>Head of Research</h4>
               <p>
                 Ben is an assistant professor of finance at the National
                 University of Singapore and teaches International Financial

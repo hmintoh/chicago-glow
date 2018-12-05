@@ -1,9 +1,15 @@
 .team-grid-item-a {
   width: 94%;
+  text-align: justify;
+}
+
+#team p {
+  /* font-size: 1.2em; */
 }
 
 .card_content {
   font-size: 0.8em;
+  text-align: justify;
 }
 
 .card_image {

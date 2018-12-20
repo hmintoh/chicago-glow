@@ -20,7 +20,7 @@
   margin-block-end: 0%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .tagline {
     font-size: 3em;
     line-height: 1.2;

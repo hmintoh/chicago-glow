@@ -5,6 +5,7 @@ const About = () => {
   return (
     <div id="about" className="secB">
       <div className="container">
+        <h3>About Us</h3>
         <h4>
           Chicago Global Strategies is a Cayman Islands-domiciled quantitative
           global factor investing fund that is created based on the guiding

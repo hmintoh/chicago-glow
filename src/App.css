@@ -16,14 +16,14 @@ danger: #f44336
   /* background-image: linear-gradient(to top right, #1a3c67, #1a3b679f); */
   background-image: linear-gradient(to top right, #24242e, #1a3c67);
   color: #e6e6e7;
-  padding: 3% 0%;
+  padding: 5% 0% 3% 0%;
 }
 
 .secB {
   /*light*/
   background-color: #e6e6e7;
   color: #24242e;
-  padding: 3% 0%;
+  padding: 5% 0% 3% 0%;
 }
 
 .container {

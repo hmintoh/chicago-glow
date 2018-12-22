@@ -25,11 +25,10 @@
   background-color: #1a3b6780;
 }
 
-.modal {
-  background-color: red;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 30%;
+.research_images {
+  object-fit: contain;
+  justify-content: center;
+  width: 38em;
 }
 
 @media (max-width: 500px) {
@@ -38,5 +37,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3%;
+  }
+
+  .research_images {
+    width: 350px;
   }
 }

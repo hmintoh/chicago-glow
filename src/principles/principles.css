@@ -2,7 +2,7 @@
   margin-top: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: auto;
+  grid-auto-rows: auto auto;
   grid-gap: 3%;
 }
 
@@ -23,6 +23,11 @@
 
 .btn_more:hover {
   background-color: #1a3b6780;
+}
+
+.principles-button {
+  padding: 3% 0%;
+  text-align: center;
 }
 
 .modal {

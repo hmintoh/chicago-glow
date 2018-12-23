@@ -36,7 +36,7 @@ class Research extends Component {
   modalToShow = title => {
     if (title === "Index Investing") {
       return (
-        <div>
+        <div className="animated fadeIn slow">
           <h3>{title}</h3>
           <p>
             Fewer than 15% of large-cap funds beat the S&P 500 in the last 10
@@ -44,12 +44,12 @@ class Research extends Component {
             to justify. Many active managers are really closet indexers, holding
             most stocks in their benchmarks.
           </p>
-          <img src={ii} className="modal_item research_images" />
+          <img src={ii} className="modal_item research_images" alt="ii" />
         </div>
       );
     } else if (title === "Efficient Markets") {
       return (
-        <div>
+        <div className="animated fadeIn slow">
           <h3>{title}</h3>
           <p>
             Investors spend $100 billion per year trying to beat the market.
@@ -57,19 +57,19 @@ class Research extends Component {
             We have developed a product that addresses this issue and lets you
             take advantage of Chicago-style investing.
           </p>
-          <img src={em} className="research_images" />
+          <img src={em} className="research_images" alt="em" />
         </div>
       );
     } else if (title === "Behavioral Finance") {
       return (
-        <div>
+        <div className="animated fadeIn slow">
           <h3>{title}</h3>
           <p>
             Due to attempts at market timing and poor behavioral finance choices
             (selling after a market correction), the average investor actually
             underperforms the overall market.
           </p>
-          <img src={bh} className="research_images" />
+          <img src={bh} className="research_images" alt="bh" />
         </div>
       );
     }

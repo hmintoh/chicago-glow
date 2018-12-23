@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+import React from "react";
 import "./principles-extended.css";
 
-const Principles_Extended = () => {
+const PrinciplesExtended = () => {
   return (
     <div id="principles-extended">
       <div className="animated fadeIn slow">
@@ -74,4 +74,4 @@ const Principles_Extended = () => {
   );
 };
 
-export default Principles_Extended;
+export default PrinciplesExtended;

@@ -53,7 +53,7 @@ class AdvisoryBoard extends Component {
   openModal = event => {
     this.setState({
       showModal: true,
-      activePerson: event.target.getAttribute("id")
+      activePerson: event.target.getAttribute("value")
     });
   };
 
@@ -64,8 +64,9 @@ class AdvisoryBoard extends Component {
   modalToShow = activePerson => {
     if (activePerson === "Michael Gibbs") {
       return (
-        <div>
-          <img src={mg} className="advisory_images" />
+        <div className="animated slow fadeIn">
+          <img src={mg} className="advisory_images" alt="mg" />
+          <h3>{activePerson}</h3>
           <p>
             Michael studies the economics of human resources and organizational
             design. He is co-author (with Edward Lazear) of the leading textbook
@@ -85,8 +86,9 @@ class AdvisoryBoard extends Component {
       );
     } else if (activePerson === "Sam Hartzmark") {
       return (
-        <div>
-          <img src={sh} className="advisory_images" />
+        <div className="animated slow fadeIn">
+          <img src={sh} className="advisory_images" alt="sh" />
+          <h3>{activePerson}</h3>
           <p>
             Samuel is an assistant professor of finance at the University of
             Chicago Booth School of Business. He studies asset pricing and
@@ -112,8 +114,9 @@ class AdvisoryBoard extends Component {
       );
     } else if (activePerson === "Kenneth Ho") {
       return (
-        <div>
-          <img src={kh} className="advisory_images" />
+        <div className="animated slow fadeIn">
+          <img src={kh} className="advisory_images" alt="kh" />
+          <h3>{activePerson}</h3>
           <p>
             Kenny is a Managing Partner and Founder of Carret Private Capital,
             an Asian multi-family office focusing on tailored, premium solutions
@@ -131,8 +134,9 @@ class AdvisoryBoard extends Component {
       );
     } else if (activePerson === "Alan Kwan") {
       return (
-        <div>
-          <img src={ak} className="advisory_images" />
+        <div className="animated slow fadeIn">
+          <img src={ak} className="advisory_images" alt="ak" />
+          <h3>{activePerson}</h3>
           <p>
             Alan is an assistant professor of finance at Hong Kong University
             where he teaches Quantitative Trading and Big Data Analysis in
@@ -148,8 +152,9 @@ class AdvisoryBoard extends Component {
       );
     } else if (activePerson === "Gaurav Rastogi") {
       return (
-        <div>
-          <img src={gr} className="advisory_images" />
+        <div className="animated slow fadeIn">
+          <img src={gr} className="advisory_images" alt="gr" />
+          <h3>{activePerson}</h3>
           <p>
             Gaurav is the CEO of Kuvera.in, an online financial advisory service
             based out of Bangalore, India and has over 15 years of experience in
@@ -166,8 +171,9 @@ class AdvisoryBoard extends Component {
       );
     } else if (activePerson === "Laurence Siegel") {
       return (
-        <div>
-          <img src={ls} className="advisory_images" />
+        <div className="animated slow fadeIn">
+          <img src={ls} className="advisory_images" alt="ls" />
+          <h3>{activePerson}</h3>
           <p>
             Larry is the Gary P. Brinson director of research at the CFA
             Institute Research Foundation. Prior to that he was director of
@@ -196,12 +202,12 @@ class AdvisoryBoard extends Component {
           <h2>Advisory Board</h2>
           <div className="advisory-grid">
             {advisoryList.map(person => (
-              <div
-                className="grid-item"
-                id={person.name}
-                onClick={this.openModal}
-              >
-                <h3>{person.name}</h3>
+              <div className="grid-item">
+                <h3>
+                  <a onClick={this.openModal} value={person.name}>
+                    {person.name}
+                  </a>
+                </h3>
                 <p>{person.role}</p>
               </div>
             ))}

@@ -7,9 +7,16 @@ const Contact = () => {
       <div className="container">
         <h2>Get in Touch</h2>
         <p>info@chicagoglobalwealth.com</p>
-        <button className="btn_investNow">
-          See Performance and Fund Fact Sheet
-        </button>
+        <a
+          href="https://www.mindfulwealth.com/en/fund-management/chicago-global-strategies/"
+          target="_blank"
+          id="mindful-wealth"
+          rel="noopener noreferrer"
+        >
+          <button className="btn_investNow">
+            See Performance and Fund Fact Sheet
+          </button>
+        </a>
       </div>
     </div>
   );

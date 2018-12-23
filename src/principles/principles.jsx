@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import ReactModal from "react-modal";
 import "./principles.css";
-import Principles_Extended from "../principles-extended/principles-extended";
+import PrinciplesExtended from "../principles-extended/principles-extended";
 
 const customStyles = {
   overlay: {
@@ -33,7 +33,7 @@ class Principles extends Component {
   };
 
   modalToShow = () => {
-    return <Principles_Extended />;
+    return <PrinciplesExtended />;
   };
 
   render() {

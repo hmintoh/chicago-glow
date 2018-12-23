@@ -1,7 +1,6 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import logo_horizontal from "../assets/cgw_logo+text+horizontal.png";
-import Principles_Extended from "../principles-extended/principles-extended";
 import Home from "../home";
 
 import "./routes.css";
@@ -12,7 +11,9 @@ const Routes = () => {
       <Router>
         <div>
           <div className="nav">
-            <img className="logo" src={logo_horizontal} alt="logo" />
+            <Link to="/">
+              <img className="logo" src={logo_horizontal} alt="logo" />
+            </Link>
             <ul className="navbar">
               <li>
                 <a className="navlinks" href="#about">

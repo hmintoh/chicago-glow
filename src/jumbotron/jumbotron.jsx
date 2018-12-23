@@ -4,7 +4,7 @@ import "./jumbotron.css";
 const Jumbotron = () => {
   return (
     <div id="jumbotron" className="jumbotron">
-      <h1 className=" animated fadeIn slow delay-1s tagline">
+      <h1 className=" animated fadeIn slow delay-2s tagline">
         Reshaping <br />
         Wealth Management
       </h1>

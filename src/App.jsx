@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import "./App.css";
 import Routes from "./routes/routes.jsx";
-import Home from "./home";
 import DisclaimerPopUp from "./disclaimer-popup/disclaimer-popup.jsx";
 
 import "animate.css";

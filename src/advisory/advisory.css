@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
+.advisory_images {
+  object-fit: contain;
+  justify-content: center;
+  width: 20em;
+}
 
 .grid-item {
   border: 1px solid white;

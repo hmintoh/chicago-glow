@@ -8,6 +8,12 @@ import "./research.css";
 const customStyles = {
   overlay: {
     zIndex: 2
+  },
+  content: {
+    top: "20px",
+    left: "20px",
+    right: "20px",
+    bottom: "20px"
   }
 };
 
@@ -36,40 +42,52 @@ class Research extends Component {
   modalToShow = title => {
     if (title === "Index Investing") {
       return (
-        <div className="animated fadeIn slow">
-          <h3>{title}</h3>
-          <p>
-            Fewer than 15% of large-cap funds beat the S&P 500 in the last 10
-            years. Poor performance brought spotlight on fees, which became hard
-            to justify. Many active managers are really closet indexers, holding
-            most stocks in their benchmarks.
-          </p>
-          <img src={ii} className="modal_item research_images" alt="ii" />
+        <div className="animated slow fadeIn modal-grid">
+          <div className="modal-item">
+            <h3>{title}</h3>
+            <p>
+              Fewer than 15% of large-cap funds beat the S&P 500 in the last 10
+              years. Poor performance brought spotlight on fees, which became
+              hard to justify. Many active managers are really closet indexers,
+              holding most stocks in their benchmarks.
+            </p>
+          </div>
+          <div className="modal-item">
+            <img src={ii} className="modal_item research_images" alt="ii" />
+          </div>
         </div>
       );
     } else if (title === "Efficient Markets") {
       return (
-        <div className="animated fadeIn slow">
-          <h3>{title}</h3>
-          <p>
-            Investors spend $100 billion per year trying to beat the market.
-            Decades of data prove index strategies do better over the long term.
-            We have developed a product that addresses this issue and lets you
-            take advantage of Chicago-style investing.
-          </p>
-          <img src={em} className="research_images" alt="em" />
+        <div className="animated slow fadeIn modal-grid">
+          <div className="modal-item">
+            <h3>{title}</h3>
+            <p>
+              Investors spend $100 billion per year trying to beat the market.
+              Decades of data prove index strategies do better over the long
+              term. We have developed a product that addresses this issue and
+              lets you take advantage of Chicago-style investing.
+            </p>
+          </div>
+          <div className="modal-item">
+            <img src={em} className="research_images" alt="em" />
+          </div>
         </div>
       );
     } else if (title === "Behavioral Finance") {
       return (
-        <div className="animated fadeIn slow">
-          <h3>{title}</h3>
-          <p>
-            Due to attempts at market timing and poor behavioral finance choices
-            (selling after a market correction), the average investor actually
-            underperforms the overall market.
-          </p>
-          <img src={bh} className="research_images" alt="bh" />
+        <div className="animated slow fadeIn modal-grid">
+          <div className="modal-item">
+            <h3>{title}</h3>
+            <p>
+              Due to attempts at market timing and poor behavioral finance
+              choices (selling after a market correction), the average investor
+              actually underperforms the overall market.
+            </p>
+          </div>
+          <div className="modal-item">
+            <img src={bh} className="research_images" alt="bh" />
+          </div>
         </div>
       );
     }

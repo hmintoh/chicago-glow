@@ -31,13 +31,14 @@ a:hover {
 
 @media (max-width: 500px) {
   .navbar {
-    display: block;
-    width: 100vw;
-    margin: 2% 0% 0% 0%;
+    /* display: inline; */
+    width: 500px;
+    margin: 0%;
   }
 
   .logo {
-    display: block;
-    margin: auto;
+    height: 40px;
+    display: inline-block;
+    margin: 2% 0%;
   }
 }

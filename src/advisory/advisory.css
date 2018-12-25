@@ -2,13 +2,32 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
-.advisory_images {
-  object-fit: contain;
-  justify-content: center;
-  width: 20em;
-}
 
 .grid-item {
   border: 1px solid white;
   text-align: center;
+}
+
+.modal-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 3%;
+  align-items: center;
+}
+
+.advisory_images {
+  object-fit: contain;
+  width: 20em;
+}
+
+.advisor_writeup {
+  text-align: justify;
+}
+
+@media (max-width: 500px) {
+  .modal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
 }

@@ -235,10 +235,10 @@ class AdvisoryBoard extends Component {
         <div className="container">
           <h2>Advisory Board</h2>
           <div className="advisory-grid">
-            {advisoryList.map(person => (
-              <div className="grid-item">
+            {advisoryList.map((person, key) => (
+              <div key={key} className="grid-item">
                 <h3>
-                  <a onClick={this.openModal} value={person.name}>
+                  <a href="##" onClick={this.openModal} value={person.name}>
                     {person.name}
                   </a>
                 </h3>

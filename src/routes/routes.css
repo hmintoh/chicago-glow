@@ -1,4 +1,4 @@
-.nav {
+#nav {
   position: fixed;
   width: 100%;
   background-color: white;
@@ -31,14 +31,14 @@ a:hover {
 
 @media (max-width: 500px) {
   .navbar {
-    /* display: inline; */
-    width: 500px;
+    float: none;
     margin: 0%;
+    padding: 0;
+    overflow: scroll;
   }
 
   .logo {
     height: 40px;
-    display: inline-block;
-    margin: 2% 0%;
+    margin-block-start: 2%;
   }
 }

@@ -19,6 +19,8 @@ const customStyles = {
   }
 };
 
+ReactModal.setAppElement("#root");
+
 class Research extends Component {
   constructor(props) {
     super(props);

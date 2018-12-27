@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import {BrowserRouter as Router, Link} from "react-router-dom";
 import logo_horizontal from "../assets/cgw_logo+text+horizontal.png";
 import Home from "../home";
 import "./routes.css";
@@ -35,48 +34,46 @@ class Routes extends Component {
   render() {
     return (
       <div>
-        <Router>
-          <div>
-            <div
-              id="nav"
-              className="animated fadeInDown"
-              onScroll={this.handleScroll}
-            >
-              <Link to="/">
-                <img className="logo" src={logo_horizontal} alt="logo" />
-              </Link>
-              <ul className="navbar">
-                <li>
-                  <a className="navlinks" href="#about">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a className="navlinks" href="#principles">
-                    Principles
-                  </a>
-                </li>
-                <li>
-                  <a className="navlinks" href="#team">
-                    Team
-                  </a>
-                </li>
-                <li>
-                  <a className="navlinks" href="#research">
-                    Research
-                  </a>
-                </li>
-                <li>
-                  <a className="navlinks" href="#contact">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <Home />
+        <div>
+          <div
+            id="nav"
+            className="animated fadeInDown"
+            onScroll={this.handleScroll}
+          >
+            <a href="#">
+              <img className="logo" src={logo_horizontal} alt="logo" />
+            </a>
+            <ul className="navbar">
+              <li>
+                <a className="navlinks" href="#about">
+                  About
+                </a>
+              </li>
+              <li>
+                <a className="navlinks" href="#principles">
+                  Principles
+                </a>
+              </li>
+              <li>
+                <a className="navlinks" href="#team">
+                  Team
+                </a>
+              </li>
+              <li>
+                <a className="navlinks" href="#research">
+                  Research
+                </a>
+              </li>
+              <li>
+                <a className="navlinks" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
           </div>
-        </Router>
+
+          <Home />
+        </div>
       </div>
     );
   }

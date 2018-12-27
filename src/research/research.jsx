@@ -5,6 +5,8 @@ import ii from "./ii.png";
 import em from "./em.png";
 import "./research.css";
 
+ReactModal.setAppElement("#root");
+
 const customStyles = {
   overlay: {
     zIndex: 2

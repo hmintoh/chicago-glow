@@ -16,6 +16,8 @@ const customStyles = {
   }
 };
 
+ReactModal.setAppElement("#root");
+
 class Principles extends Component {
   constructor() {
     super();

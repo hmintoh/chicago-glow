@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {BrowserRouter as Router, Link} from "react-router-dom";
 import logo_horizontal from "../assets/cgw_logo+text+horizontal.png";
 import Home from "../home";
 import "./routes.css";
@@ -74,9 +74,7 @@ class Routes extends Component {
               </ul>
             </div>
 
-            <Switch>
-              <Route exact path="/" component={Home} />
-            </Switch>
+            <Home />
           </div>
         </Router>
       </div>

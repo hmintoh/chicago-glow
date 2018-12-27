@@ -8,16 +8,9 @@
   text-align: center;
 }
 
-.modal-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 3%;
-  align-items: center;
-}
-
 .advisory_images {
   object-fit: contain;
-  width: 20em;
+  width: 12em;
 }
 
 .advisor_writeup {
@@ -25,9 +18,7 @@
 }
 
 @media (max-width: 500px) {
-  .modal-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0;
+  .advisory_images {
+    width: 300px;
   }
 }

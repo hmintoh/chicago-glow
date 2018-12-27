@@ -31,12 +31,25 @@
   width: 38em;
 }
 
+.modal-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 3%;
+  align-items: center;
+}
+
 @media (max-width: 500px) {
   .services_grid {
     margin-top: 2%;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3%;
+  }
+
+  .modal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
   }
 
   .research_images {

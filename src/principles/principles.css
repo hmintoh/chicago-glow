@@ -1,4 +1,4 @@
-.services_grid {
+.principles_grid {
   margin-top: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -6,7 +6,7 @@
   grid-gap: 3%;
 }
 
-.services_item {
+.principles_item {
   border: 2px solid #e6e6e7;
   box-shadow: 5px 10px #cfd0d462;
   text-align: justify;
@@ -38,7 +38,7 @@
 }
 
 @media (max-width: 500px) {
-  .services_grid {
+  .principles_grid {
     margin-top: 2%;
     display: grid;
     grid-template-columns: 1fr;

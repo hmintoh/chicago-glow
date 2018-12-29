@@ -206,7 +206,7 @@ class AdvisoryBoard extends Component {
     const {showModal, activePerson} = this.state;
 
     return (
-      <div className="secB">
+      <div id="advisory" className="secB">
         <div className="container">
           <h2>Advisory Board</h2>
           <div className="advisory-grid">
@@ -223,7 +223,7 @@ class AdvisoryBoard extends Component {
           </div>
           <ReactModal isOpen={showModal} style={customStyles}>
             {this.modalToShow(activePerson)}
-            <button className="btn_more" onClick={this.closeModal}>
+            <button className="btn_close" onClick={this.closeModal}>
               Close
             </button>
           </ReactModal>

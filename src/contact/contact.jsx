@@ -6,7 +6,7 @@ const Contact = () => {
     <div id="contact" className="secB">
       <div className="container">
         <h2>Get in Touch</h2>
-        <p>info@chicagoglobalwealth.com</p>
+        <p>Ivan.Chelebiev@mindfulwealth.com</p>
         <a
           href="https://www.mindfulwealth.com/en/fund-management/chicago-global-strategies/"
           target="_blank"

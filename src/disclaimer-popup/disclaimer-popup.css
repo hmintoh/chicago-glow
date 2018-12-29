@@ -1,7 +1,11 @@
 .popup-container {
   background-color: #cfd0d462;
-  text-align: center;
   padding: 2% 30%;
+  text-align: justify;
+}
+
+.disclaimer-title {
+  text-align: center;
 }
 
 .popup-container p {
@@ -19,6 +23,7 @@
 
 button {
   font-size: 1em;
+  justify-content: center;
 }
 
 .disclaimer-btn:hover {
@@ -29,7 +34,7 @@ button {
 @media (max-width: 800px) {
   .popup-container {
     background-color: #cfd0d462;
-    text-align: center;
+    text-align: justify;
     padding: 2% 10%;
   }
 }

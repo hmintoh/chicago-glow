@@ -45,8 +45,8 @@ class Principles extends Component {
       <div id="principles" className="secA">
         <div className="container">
           <h2>Principles</h2>
-          <div className="services_grid">
-            <div className="services_item">
+          <div className="principles_grid">
+            <div className="principles_item">
               <h3>Low Fees</h3>
               <p>
                 Investors pay over $100 billion a year in management fees. Fee
@@ -56,24 +56,26 @@ class Principles extends Component {
                 sacrificing performance.
               </p>
             </div>
-            <div className="services_item">
+            <div className="principles_item">
               <h3>Long Term Efficient</h3>
               <p>
-                Over the long term markets reflect fundamentals, but even Eugene
-                Fama does not believe that markets are efficient always. Our
-                disciplined strategies are refined from Chicago research based
-                on over 50 years of data across over 20 countries to take
-                advantage of both short-term errors and long-term corrections.
+                Over the long term markets reflect fundamentals, but even Nobel
+                Prize winner and Chicago Professor Eugene Fama does not believe
+                that markets are efficient always. Our disciplined strategies
+                are refined from Chicago research based on over 50 years of data
+                across over 20 countries to take advantage of both short-term
+                errors and long-term corrections.
               </p>
             </div>
-            <div className="services_item">
+            <div className="principles_item">
               <h3>Behavioral Finance</h3>
               <p>
                 Individual investors tend to chase returns and overreact to
                 short-term news. We exploit these short-term errors in the
                 market while striving to reduce behavioral biases among our own
-                investors through the application of Richard Thaler’s principles
-                using nudges and sludges.
+                investors through the application of Nobel Prize winner and
+                Chicago Professor Richard Thaler's principles using nudges and
+                sludges.
               </p>
             </div>
             <div />
@@ -87,7 +89,7 @@ class Principles extends Component {
           <ReactModal isOpen={showModal} style={customStyles}>
             <div className="container">
               {this.modalToShow()}
-              <button className="btn_more" onClick={this.handleCloseModal}>
+              <button className="btn_close" onClick={this.handleCloseModal}>
                 Close
               </button>
             </div>

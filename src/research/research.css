@@ -12,6 +12,9 @@
   text-align: justify;
   padding: 30px;
   margin-bottom: 3%;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
 }
 
 .btn_more {
@@ -19,16 +22,32 @@
   background-color: #1a3c67;
   color: #e6e6e7;
   font-size: 1.2em;
+  margin: 2% 5% 0% 5%;
 }
 
 .btn_more:hover {
   background-color: #1a3b6780;
 }
 
+.btn_close {
+  border: 2px solid #e6e6e7;
+  background-color: #1a3c67;
+  color: #e6e6e7;
+  font-size: 1.2em;
+}
+
+.btn_close:hover {
+  background-color: #1a3b6780;
+}
 .research_images {
   object-fit: contain;
   justify-content: center;
   width: 38em;
+}
+
+.research_btns_container {
+  text-align: center;
+  align-self: center flex-end;
 }
 
 .modal-grid {
@@ -38,14 +57,20 @@
   align-items: center;
 }
 
-@media (max-width: 500px) {
-  .services_grid {
-    margin-top: 2%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 3%;
-  }
+#research h3 {
+  text-align: left;
+  height: 2em;
+}
 
+#research a {
+  padding: 0;
+}
+
+#research p {
+  white-space: pre-wrap;
+}
+
+@media (max-width: 1025px) {
   .modal-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -53,6 +78,21 @@
   }
 
   .research_images {
-    width: 300px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .services_grid {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3%;
+  }
+}
+
+@media (max-width: 500px) {
+  .research_images {
+    width: 280px;
   }
 }

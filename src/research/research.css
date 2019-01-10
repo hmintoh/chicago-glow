@@ -22,7 +22,7 @@
   background-color: #1a3c67;
   color: #e6e6e7;
   font-size: 1.2em;
-  margin: 2% 5% 0% 5%;
+  margin-bottom: 1%;
 }
 
 .btn_more:hover {
@@ -34,11 +34,13 @@
   background-color: #1a3c67;
   color: #e6e6e7;
   font-size: 1.2em;
+  margin-top: 1%;
 }
 
 .btn_close:hover {
   background-color: #1a3b6780;
 }
+
 .research_images {
   object-fit: contain;
   justify-content: center;
@@ -55,6 +57,10 @@
   grid-template-columns: auto 1fr;
   grid-gap: 3%;
   align-items: center;
+}
+
+.learn-more {
+  padding: 0;
 }
 
 #research h3 {
@@ -87,7 +93,7 @@
     margin-top: 2%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 3%;
+    grid-gap: 2%;
   }
 }
 

@@ -5,25 +5,22 @@ const Disclaimer = () => {
   return (
     <div className="disclaimer">
       <div className="container">
-        <p>© 2018 CHICAGO GLOBAL WEALTH Pte Ltd.</p>
-
+        <p>© 2019 CHICAGO GLOBAL WEALTH Pte Ltd.</p>
         <p>
-          Chicago Global Wealth Pte Ltd. (Chicago Global) is an independent
-          wealth management firm whose founders and advisers include alumni and
-          faculty of the University of Chicago Booth School of Business. The
-          University of Chicago and its Booth School of Business have no
-          affiliation with the firm and do not endorse its services.
+          Chicago Global Strategies is a Cayman Island-domiciled investment fund
+          whose founders and advisers include alumni and faculty of the
+          University of Chicago Booth School of Business. The University of
+          Chicago and its Booth School of Business have no affiliation with the
+          firm and do not endorse its services.
         </p>
-
         <p>
           This website is for informational purposes only and does not
           constitute an offer or advertisement to buy any security. Chicago
-          Global Wealth does not intend to provide investment advice through
-          this website and does not represent that any securities or services
-          are suitable for any investor. Before making an investment decision,
-          please consult a qualified investment and tax adviser.
+          Global Strategies (“Chicago Global”) does not provide investment
+          advice through this website and does not represent that any securities
+          or services are suitable for any investor. Before making an investment
+          decision, please consult a qualified investment and tax adviser.
         </p>
-
         <p>
           This website does not constitute an offer to sell, or the solicitation
           of an offer to purchase, the Fund’s securities. Any such offer or
@@ -37,7 +34,6 @@ const Disclaimer = () => {
           electronically in written, graphical, or verbal communication may
           change the terms of those agreements.
         </p>
-
         <p>
           The accuracy, completeness, and timeliness of the information
           contained within this document cannot be guaranteed. Chicago Global

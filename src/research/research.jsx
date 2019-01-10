@@ -80,6 +80,16 @@ class Research extends Component {
               alt="eit"
             />
           </div>
+          <div className="modal-item">
+            <a
+              className="learn-more"
+              href={researchBlurb[0].link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn_more">See Full Paper</button>
+            </a>
+          </div>
         </div>
       );
     } else if (title === "Dividends Fallacy") {
@@ -96,6 +106,16 @@ class Research extends Component {
               alt="df"
             />
           </div>
+          <div className="modal-item">
+            <a
+              className="learn-more"
+              href={researchBlurb[1].link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn_more">See Full Paper</button>
+            </a>
+          </div>
         </div>
       );
     } else if (title === "Rolling Mental Accounts Fallacy") {
@@ -111,6 +131,16 @@ class Research extends Component {
               className="research_images"
               alt="rma"
             />
+          </div>
+          <div className="modal-item">
+            <a
+              className="learn-more"
+              href={researchBlurb[2].link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn_more">See Full Paper</button>
+            </a>
           </div>
         </div>
       );
@@ -132,9 +162,6 @@ class Research extends Component {
                   <p>{item.blurb}</p>
                 </div>
                 <div className="research_btns_container">
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
-                    <button className="btn_more">See Full Paper</button>
-                  </a>
                   <button
                     name={item.title}
                     className="btn_more"

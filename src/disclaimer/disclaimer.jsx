@@ -5,7 +5,7 @@ const Disclaimer = () => {
   return (
     <div className="disclaimer">
       <div className="container">
-        <p>© 2019 CHICAGO GLOBAL WEALTH Pte Ltd.</p>
+        <p>© 2019 CHICAGO GLOBAL STRATEGIES</p>
         <p>
           Chicago Global Strategies is a Cayman Island-domiciled investment fund
           whose founders and advisers include alumni and faculty of the

@@ -55,7 +55,7 @@ const Team = () => {
             </div>
             <div className="card_content">
               <img className="card_image" src={Ben} alt="Ben" />
-              <h2>Ben Charoenwong</h2>
+              <h2>Ben Charoenwong, PhD</h2>
               <h4>Head of Research</h4>
               <p>
                 Ben is an assistant professor of finance at the National

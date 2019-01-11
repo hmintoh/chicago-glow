@@ -10,11 +10,11 @@ import "./advisory.css";
 
 const advisoryList = [
   {
-    name: "Michael Gibbs",
+    name: "Michael Gibbs, PhD",
     role: "Governance"
   },
   {
-    name: "Sam Hartzmark",
+    name: "Sam Hartzmark, PhD",
     role: "Behavioral Finance"
   },
   {
@@ -22,7 +22,7 @@ const advisoryList = [
     role: "Business Strategy"
   },
   {
-    name: "Alan Kwan",
+    name: "Alan Kwan, PhD",
     role: "Quantitative Strategies"
   },
   {
@@ -70,7 +70,7 @@ class AdvisoryBoard extends Component {
   };
 
   modalToShow = activePerson => {
-    if (activePerson === "Michael Gibbs") {
+    if (activePerson === "Michael Gibbs, PhD") {
       return (
         <div className="animated slow fadeIn">
           <img src={mg} className="advisory_images" alt="mg" />
@@ -92,7 +92,7 @@ class AdvisoryBoard extends Component {
           </p>
         </div>
       );
-    } else if (activePerson === "Sam Hartzmark") {
+    } else if (activePerson === "Sam Hartzmark, PhD") {
       return (
         <div className="animated slow fadeIn">
           <img src={sh} className="advisory_images" alt="sh" />
@@ -140,7 +140,7 @@ class AdvisoryBoard extends Component {
           </p>
         </div>
       );
-    } else if (activePerson === "Alan Kwan") {
+    } else if (activePerson === "Alan Kwan, PhD") {
       return (
         <div className="animated slow fadeIn">
           <img src={ak} className="advisory_images" alt="ak" />

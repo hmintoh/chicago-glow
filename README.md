@@ -15,4 +15,4 @@ These instructions will get you a copy of the project up and running on your loc
 - Web Framework - ReactJS
 - Website Manager - Google Domains
 
-© 2018 chicago global wealth All Rights Reserved
+© 2019 thm All Rights Reserved

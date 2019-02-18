@@ -1,12 +1,12 @@
 .btn_investNow {
-  border: 2px solid white;
-  background-color: #25ad89;
+  border: 2px solid #e6e6e7;
+  background-color: #1a3c67;
+  color: #e6e6e7;
   font-size: 1.2em;
-  color: white;
 }
 
 .btn_investNow:hover {
-  background-color: #24ac88cc;
+  background-color: #1a3b67e1;
 }
 
 #mindful-wealth {

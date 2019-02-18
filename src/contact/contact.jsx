@@ -14,7 +14,7 @@ const Contact = () => {
           rel="noopener noreferrer"
         >
           <button className="btn_investNow">
-            See Performance and Fund Fact Sheet
+            Request Performance and FactSheet
           </button>
         </a>
       </div>

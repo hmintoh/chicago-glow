@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./App.css";
-import Routes from "./routes/routes.jsx";
-import DisclaimerPopUp from "./disclaimer-popup/disclaimer-popup.jsx";
+import Routes from "./components/routes/routes.jsx";
+import DisclaimerPopUp from "./components/disclaimer-popup/disclaimer-popup.jsx";
 
 import "animate.css";
 

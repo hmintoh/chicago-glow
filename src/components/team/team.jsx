@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-slick";
-import Ivan from "../assets/Ivan_Chelebiev.png";
-import Ben from "../assets/Ben_Charoenwong.png";
+import Ivan from "../../assets/Ivan_Chelebiev.png";
+import Ben from "../../assets/Ben_Charoenwong.png";
 import "./team.css";
 
 const settings = {

@@ -1,12 +1,12 @@
 import React, {Component} from "react";
-import Jumbotron from "./jumbotron/jumbotron.jsx";
-import About from "./about/about.jsx";
-import Principles from "./principles/principles.jsx";
-import Team from "./team/team.jsx";
-import AdvisoryBoard from "./advisory/advisory.jsx";
-import Research from "./research/research.jsx";
-import Contact from "./contact/contact.jsx";
-import Disclaimer from "./disclaimer/disclaimer.jsx";
+import Jumbotron from "./components/jumbotron/jumbotron.jsx";
+import About from "./components/about/about.jsx";
+import Principles from "./components/principles/principles.jsx";
+import Team from "./components/team/team.jsx";
+import AdvisoryBoard from "./components/advisory/advisory.jsx";
+import Research from "./components/research/research.jsx";
+import Contact from "./components/contact/contact.jsx";
+import Disclaimer from "./components/disclaimer/disclaimer.jsx";
 
 class Home extends Component {
   componentDidUpdate = () => {

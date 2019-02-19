@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import logo_horizontal from "../assets/cgw_logo+text+horizontal.png";
+import logo_horizontal from "../../assets/cgw_logo+text+horizontal.png";
 import "./disclaimer-popup.css";
 
 class DisclaimerPopUp extends Component {

@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import Carousel from "react-slick";
 import "./about-popup.css";
-// import deck from "../../assets/test1.html";
 
 const settings = {
   dots: true,
@@ -29,7 +28,8 @@ class AboutPopUp extends Component {
                   <iframe
                     width={window.innerWidth}
                     height={window.innerHeight}
-                    src="../../assets/test1.html"
+                    title="Slide Deck"
+                    src="test.html"
                     alt={slides.alt}
                   />
                 </div>

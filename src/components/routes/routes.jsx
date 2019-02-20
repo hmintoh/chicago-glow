@@ -55,6 +55,16 @@ class Routes extends Component {
                 </a>
               </li>
               <li>
+                <a
+                  className="navlinks"
+                  href="https://chicagoglobalwealth.wordpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Notebook
+                </a>
+              </li>
+              <li>
                 <a className="navlinks" href="#team">
                   Team
                 </a>

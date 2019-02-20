@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import Carousel from "react-slick";
 import "./about-popup.css";
+// import deck from "../../assets/test1.html";
 
 const settings = {
   dots: true,
@@ -13,11 +14,7 @@ const settings = {
   arrows: false
 };
 
-const slides = [
-  {text: "lerem ipsum 1"},
-  {text: "lerem ipsum 2"},
-  {text: "lerem ipsum 3"}
-];
+const slides = [{content: "", alt: "1"}];
 
 class AboutPopUp extends Component {
   render() {
@@ -29,7 +26,12 @@ class AboutPopUp extends Component {
             {slides.map(slides => {
               return (
                 <div className="card_content">
-                  <h3>{slides.text}</h3>
+                  <iframe
+                    width={window.innerWidth}
+                    height={window.innerHeight}
+                    src="../../assets/test1.html"
+                    alt={slides.alt}
+                  />
                 </div>
               );
             })}

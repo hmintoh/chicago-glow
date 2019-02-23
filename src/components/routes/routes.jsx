@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import logo_horizontal from "../assets/cgw_logo+text+horizontal.png";
-import Home from "../home";
+import logo_horizontal from "../../assets/cgw_logo+text+horizontal.png";
+import Home from "../../home";
 import "./routes.css";
 
 let lastScrollTop = 0;
@@ -52,6 +52,16 @@ class Routes extends Component {
               <li>
                 <a className="navlinks" href="#principles">
                   Principles
+                </a>
+              </li>
+              <li>
+                <a
+                  className="navlinks"
+                  href="https://chicagoglobalwealth.wordpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Notebook
                 </a>
               </li>
               <li>

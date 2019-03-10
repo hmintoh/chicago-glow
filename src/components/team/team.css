@@ -1,25 +1,31 @@
-.team-grid-item-a {
-  width: 92%;
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.grid-item {
+  border: 1px solid white;
+  text-align: center;
+}
+
+.team_images {
+  object-fit: contain;
+  width: 140px;
+  height: 140px;
+  display: block;
+  margin: 0px auto 16px auto;
+}
+
+.team_writeup {
   text-align: justify;
-  margin: auto;
 }
 
-#team p {
-  /* font-size: 1.2em; */
-}
-
-.card_content {
-  font-size: 0.8em;
-  text-align: justify;
-}
-
-.card_image {
-  width: 150px;
-  height: 150px;
+#team h3 {
+  margin-block-end: 0%;
 }
 
 @media (max-width: 500px) {
-  .team-grid-item-a {
-    width: auto;
+  .team_images {
+    width: 280px;
   }
 }

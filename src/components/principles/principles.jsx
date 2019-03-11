@@ -46,7 +46,7 @@ class Principles extends Component {
         <div className="container">
           <h2>Principles</h2>
           <div className="principles_grid">
-            <div className="principles_item">
+            <div className="principles_item low_fees">
               <h3>Low Fees</h3>
               <p>
                 Investors pay over $100 billion a year in management fees. Fee
@@ -56,7 +56,7 @@ class Principles extends Component {
                 sacrificing performance.
               </p>
             </div>
-            <div className="principles_item">
+            <div className="principles_item long_term_efficient">
               <h3>Long Term Efficient</h3>
               <p>
                 Over the long term markets reflect fundamentals, but even Nobel
@@ -67,7 +67,7 @@ class Principles extends Component {
                 errors and long-term corrections.
               </p>
             </div>
-            <div className="principles_item">
+            <div className="principles_item behavioral">
               <h3>Behavioral Finance</h3>
               <p>
                 Individual investors tend to chase returns and overreact to
@@ -78,13 +78,11 @@ class Principles extends Component {
                 sludges.
               </p>
             </div>
-            <div />
             <div className="principles-button">
               <button className="btn_more" onClick={this.openModal}>
                 Learn More
               </button>
             </div>
-            <div />
           </div>
           <ReactModal isOpen={showModal} style={customStyles}>
             <div className="container">

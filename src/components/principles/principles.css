@@ -3,7 +3,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto auto;
-  grid-gap: 3%;
+  grid-template-areas:
+    "low_fees long_term_efficient behavioral"
+    ". principles_button .";
 }
 
 .principles_item {
@@ -11,23 +13,25 @@
   box-shadow: 5px 10px #cfd0d462;
   text-align: justify;
   padding: 30px;
-  margin-bottom: 3%;
+  margin: 0% 3% 3% 3%;
 }
 
-.btn_more {
-  border: 2px solid #e6e6e7;
-  background-color: #1a3c67;
-  color: #e6e6e7;
-  font-size: 1.2em;
+.low_fees {
+  grid-area: low_fees;
 }
 
-.btn_more:hover {
-  background-color: #1a3b6780;
+.long_term_efficient {
+  grid-area: long_term_efficient;
+}
+
+.behavioral {
+  grid-area: behavioral;
 }
 
 .principles-button {
+  grid-area: principles_button;
   padding: 3% 0%;
-  text-align: center;
+  margin: auto;
 }
 
 .modal {
@@ -37,11 +41,15 @@
   padding-top: 30%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 770px) {
   .principles_grid {
     margin-top: 2%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 3%;
+    grid-template-areas:
+      "low_fees"
+      "long_term_efficient"
+      "behavioral"
+      "principles_button";
   }
 }

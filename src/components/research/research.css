@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto;
-  grid-gap: 3%;
 }
 
 .services_item {
@@ -11,7 +10,7 @@
   box-shadow: 5px 10px #cfd0d462;
   text-align: justify;
   padding: 30px;
-  margin-bottom: 3%;
+  margin: 0% 3% 3% 3%;
   justify-content: space-between;
   flex-direction: column;
   display: flex;
@@ -38,7 +37,7 @@
 }
 
 .btn_close:hover {
-  background-color: #1a3b6780;
+  background-color: #1a3b67c5;
 }
 
 .research_images {
@@ -88,12 +87,11 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 770px) {
   .services_grid {
     margin-top: 2%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2%;
   }
 }
 

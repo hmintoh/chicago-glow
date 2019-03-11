@@ -1,6 +1,8 @@
 .jumbotron {
   background: linear-gradient(rgba(26, 59, 103, 0.3), rgba(36, 36, 46)),
     url(./jumbotron1.jpg);
+  text-align: center;
+  margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 30%;

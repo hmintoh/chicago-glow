@@ -10,17 +10,20 @@ const settings = {
   speed: 1000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false
+  arrows: true
 };
 
-const slides = [{content: "", alt: "1"}];
+const slides = [
+  {content: "test.html", alt: "0"},
+  {content: "test.1.html", alt: "1"},
+  {content: "test.2.html", alt: "2"}
+];
 
 class AboutPopUp extends Component {
   render() {
     return (
       <div id="about-popup">
         <div className="animated fadeIn slow">
-          <h2>Slide Deck</h2>
           <Carousel {...settings}>
             {slides.map(slides => {
               return (
@@ -28,8 +31,7 @@ class AboutPopUp extends Component {
                   <iframe
                     width={window.innerWidth}
                     height={window.innerHeight}
-                    title="Slide Deck"
-                    src="test.html"
+                    src={slides.content}
                     alt={slides.alt}
                   />
                 </div>

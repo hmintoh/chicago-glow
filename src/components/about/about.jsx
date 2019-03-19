@@ -1,45 +1,21 @@
 import React, {Component} from "react";
-import ReactModal from "react-modal";
 import AboutPopUp from "../about-popup/about-popup";
 import "./about.css";
-
-const customStyles = {
-  overlay: {
-    zIndex: 2
-  },
-  content: {
-    backgroundColor: "#e6e6e7",
-    top: "0%",
-    right: "0%",
-    bottom: "0%",
-    left: "0%"
-  }
-};
-
-ReactModal.setAppElement("#root");
 
 class About extends Component {
   constructor() {
     super();
     this.state = {
-      showModal: false
+      showSlideDeck: false
     };
   }
 
-  openModal = () => {
-    this.setState({showModal: true});
-  };
-
-  handleCloseModal = () => {
-    this.setState({showModal: false});
-  };
-
-  modalToShow = () => {
-    return <AboutPopUp />;
+  handleClick = () => {
+    this.setState({showSlideDeck: !this.state.showSlideDeck});
   };
 
   render() {
-    const {showModal} = this.state;
+    const {showSlideDeck} = this.state;
 
     return (
       <div id="about" className="secB">
@@ -60,18 +36,10 @@ class About extends Component {
             opportunistic tilts to help clients grow their wealth over the long
             term.
           </h5>
-          <button className="btn_investNow" onClick={this.openModal}>
+          {/* <button className="btn_investNow" onClick={this.handleClick}>
             Learn More
           </button>
-
-          <ReactModal isOpen={showModal} style={customStyles}>
-            <div className="container">
-              {this.modalToShow()}
-              <button className="btn_close" onClick={this.handleCloseModal}>
-                Close
-              </button>
-            </div>
-          </ReactModal>
+          {showSlideDeck && <AboutPopUp />} */}
         </div>
       </div>
     );

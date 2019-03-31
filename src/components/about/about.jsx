@@ -36,10 +36,10 @@ class About extends Component {
             opportunistic tilts to help clients grow their wealth over the long
             term.
           </h5>
-          {/* <button className="btn_investNow" onClick={this.handleClick}>
+          <button className="btn_investNow" onClick={this.handleClick}>
             Learn More
           </button>
-          {showSlideDeck && <AboutPopUp />} */}
+          {showSlideDeck && <AboutPopUp />}
         </div>
       </div>
     );

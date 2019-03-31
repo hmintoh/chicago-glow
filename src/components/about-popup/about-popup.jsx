@@ -5,7 +5,7 @@ import "./about-popup.css";
 const settings = {
   dots: true,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2500,
   speed: 1000,
   slidesToShow: 1,
@@ -20,15 +20,27 @@ const slides = [
 ];
 
 class AboutPopUp extends Component {
+  componentDidMount = () => {
+    this.setIframeDimensions();
+  };
+
+  setIframeDimensions = () => {
+    const htmlDocument = document
+      .getElementById("about-popup-iframe")
+      .contentWindow.document.getElementsByTagName("slide");
+  };
+
   render() {
     return (
       <div id="about-popup">
         <div className="animated fadeIn slow">
           <Carousel {...settings}>
-            {slides.map(slides => {
+            {slides.map((slides, key) => {
               return (
-                <div className="card_content">
+                <div className="card_content" key={key}>
                   <iframe
+                    id="about-popup-iframe"
+                    title={slides.alt}
                     width={window.innerWidth}
                     height={window.innerHeight}
                     src={slides.content}

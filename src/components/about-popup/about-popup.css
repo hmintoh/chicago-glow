@@ -4,4 +4,5 @@
 
 iframe {
   border: none;
+  object-fit: cover;
 }

@@ -20,37 +20,37 @@ const slides = [
 ];
 
 class AboutPopUp extends Component {
-  componentDidMount = () => {
-    this.setIframeDimensions();
-  };
+  getIframeDimensions = () => {
+    const iframe = document.getElementById("about-popup-iframe");
+    const slideElement = iframe.contentDocument.body.getElementsByTagName(
+      "slide"
+    )[0];
+    const slideWidth = slideElement.offsetWidth;
+    const slideHeight = slideElement.offsetHeight;
 
-  setIframeDimensions = () => {
-    const htmlDocument = document
-      .getElementById("about-popup-iframe")
-      .contentWindow.document.getElementsByTagName("slide");
+    const container = document.getElementById("about-popup");
+    console.log(container);
+    container.style.width = `${slideWidth}px`;
+    container.style.height = `${slideHeight}px`;
   };
 
   render() {
     return (
-      <div id="about-popup">
-        <div className="animated fadeIn slow">
-          <Carousel {...settings}>
-            {slides.map((slides, key) => {
-              return (
-                <div className="card_content" key={key}>
-                  <iframe
-                    id="about-popup-iframe"
-                    title={slides.alt}
-                    width={window.innerWidth}
-                    height={window.innerHeight}
-                    src={slides.content}
-                    alt={slides.alt}
-                  />
-                </div>
-              );
-            })}
-          </Carousel>
-        </div>
+      <div id="about-popup" className="animated fadeIn slow">
+        <Carousel {...settings}>
+          {slides.map((slides, key) => {
+            return (
+              <div className="card_content" key={key}>
+                <iframe
+                  id="about-popup-iframe"
+                  title={slides.alt}
+                  src={slides.content}
+                  alt={slides.alt}
+                />
+              </div>
+            );
+          })}
+        </Carousel>
       </div>
     );
   }

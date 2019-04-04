@@ -21,17 +21,25 @@ const slides = [
 
 class AboutPopUp extends Component {
   getIframeDimensions = () => {
-    const iframe = document.getElementById("about-popup-iframe");
-    const slideElement = iframe.contentDocument.body.getElementsByTagName(
+    const frames = document.getElementsByTagName("iframe");
+    const frameDimensions = frames[0].contentWindow.document.body.getElementsByTagName(
       "slide"
     )[0];
-    const slideWidth = slideElement.offsetWidth;
-    const slideHeight = slideElement.offsetHeight;
+    const slideWidth = frameDimensions.offsetWidth;
+    const slideHeight = frameDimensions.offsetHeight;
 
-    const container = document.getElementById("about-popup");
-    console.log(container);
-    container.style.width = `${slideWidth}px`;
-    container.style.height = `${slideHeight}px`;
+    for (let i = 0; i < frames.length; i++) {
+      const width = `${slideWidth}px`;
+      const height = `${slideHeight}px`;
+
+      if (window.innerWidth < 500) {
+        width = `${window.innerWidth}px`;
+        height = `${window.innerWidth / 2}px`;
+      }
+
+      frames[i].style.width = width;
+      frames[i].style.height = height;
+    }
   };
 
   render() {
@@ -40,12 +48,12 @@ class AboutPopUp extends Component {
         <Carousel {...settings}>
           {slides.map((slides, key) => {
             return (
-              <div className="card_content" key={key}>
+              <div className="iframe_container" key={key}>
                 <iframe
-                  id="about-popup-iframe"
                   title={slides.alt}
                   src={slides.content}
                   alt={slides.alt}
+                  onLoad={this.getIframeDimensions}
                 />
               </div>
             );

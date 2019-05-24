@@ -14,9 +14,9 @@ const settings = {
 };
 
 const slides = [
-  {content: "test.html", alt: "0"},
-  {content: "test.1.html", alt: "1"},
-  {content: "test.2.html", alt: "2"}
+  {content: "CGS-1.png", alt: "0"},
+  {content: "CGS-1.png", alt: "0"},
+  {content: "CGS-1.png", alt: "0"}
 ];
 
 class AboutPopUp extends Component {
@@ -49,12 +49,13 @@ class AboutPopUp extends Component {
           {slides.map((slides, key) => {
             return (
               <div className="iframe_container" key={key}>
-                <iframe
+                {/* <iframe
                   title={slides.alt}
                   src={slides.content}
                   alt={slides.alt}
                   onLoad={this.getIframeDimensions}
-                />
+                /> */}
+                <img title={slides.alt} src={slides.content} alt={slides.alt} />
               </div>
             );
           })}

@@ -2,10 +2,12 @@ import React from "react";
 import "./disclaimer.css";
 
 const Disclaimer = () => {
+  const currentYear =   new Date().getFullYear();
+
   return (
     <div className="disclaimer">
       <div className="container">
-        <p>© 2019 CHICAGO GLOBAL STRATEGIES</p>
+        <p>© {currentYear} CHICAGO GLOBAL STRATEGIES</p>
         <p>
           Chicago Global Strategies is a Cayman Island-domiciled investment fund
           whose founders and advisers include alumni and faculty of the
